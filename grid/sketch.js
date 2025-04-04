@@ -16,10 +16,10 @@ async function setup() {
   createCanvas(1024, 1024);
   imageSize = width / cols;
 
-  photos = await loadJSON('/embeddings/photo.json');
+  photos = await loadJSON('/data/photo.json');
 
   // Load and chop up embeddings
-  let rawData = await loadBytes('/embeddings/embeddings.bin');
+  let rawData = await loadBytes('/data/embeddings.bin');
   let rawFloats = new Float32Array(rawData.buffer, rawData.byteOffset, rawData.byteLength / 4);
   let embeddingLength = 512;
   let embeddings = [];

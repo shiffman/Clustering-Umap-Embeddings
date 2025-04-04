@@ -1,4 +1,4 @@
-# Image Clustering Examples
+# Clustering-Umap-Embeddings
 
 This repository contains examples of clustering images using UMAP (Uniform Manifold Approximation and Projection) visualization.
 

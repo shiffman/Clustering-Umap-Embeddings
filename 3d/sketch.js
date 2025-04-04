@@ -9,8 +9,8 @@ async function setup() {
   scaleSlider = createSlider(1, 1000, 100);
 
   // Load data
-  photos = await loadJSON('/embeddings/photo.json');
-  const rawData = await loadBytes('/embeddings/embeddings.bin');
+  photos = await loadJSON('/data/photo.json');
+  const rawData = await loadBytes('/data/embeddings.bin');
   const rawFloats = new Float32Array(rawData.buffer, rawData.byteOffset, rawData.byteLength / 4);
 
   // Process embeddings
