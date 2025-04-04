@@ -1,3 +1,6 @@
+// Machine Learning for Creative Coding
+// https://github.com/shiffman/ML-for-Creative-Coding
+
 let points2D = [];
 let images = [];
 let photos;

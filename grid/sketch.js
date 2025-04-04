@@ -1,3 +1,6 @@
+// Machine Learning for Creative Coding
+// https://github.com/shiffman/ML-for-Creative-Coding
+
 // Array of images
 let images = [];
 // Array of photo metadata
