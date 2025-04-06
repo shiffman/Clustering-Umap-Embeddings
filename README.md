@@ -2,7 +2,7 @@
 
 This repository contains examples of clustering images using UMAP (Uniform Manifold Approximation and Projection) visualization.
 
-The examples use an embeddings database (`embeddings/embeddings.bin`, `embeddings/photos.json`) from this[Create Embeddings Database](https://github.com/shiffman/create-embeddings-database) node.js repo.
+The examples use an embeddings database (`embeddings/embeddings.bin`, `embeddings/photos.json`) from this [Create Embeddings Database](https://github.com/shiffman/create-embeddings-database) node.js repo.
 
 ## Examples
 
