@@ -2,6 +2,8 @@
 
 This repository contains examples of clustering images using UMAP (Uniform Manifold Approximation and Projection) visualization.
 
+The examples use an embeddings database (`embeddings/embeddings.bin`, `embeddings/photos.json`) from this[Create Embeddings Database](https://github.com/shiffman/create-embeddings-database) node.js repo.
+
 ## Examples
 
 - **2D**: Visualize images in a 2D UMAP projection
@@ -14,11 +16,13 @@ The examples use image embeddings (vector representations) created with CLIP (Co
 
 ### Creating Embeddings
 
-The embeddings used in these examples were created using the [Semantic-Search-Images](https://github.com/shiffman/Semantic-Search-Images) repository with the following model:
+The embeddings used in these examples were created using the [Create Embeddings Database](https://github.com/shiffman/create-embeddings-database) repository with the following model:
 
 ```javascript
 const processor = await AutoProcessor.from_pretrained('Xenova/clip-vit-base-patch16');
-const vision_model = await CLIPVisionModelWithProjection.from_pretrained('Xenova/clip-vit-base-patch16');
+const vision_model = await CLIPVisionModelWithProjection.from_pretrained(
+  'Xenova/clip-vit-base-patch16'
+);
 
 // Example of extracting embeddings from an image
 const image = await RawImage.read(imageUrl);
